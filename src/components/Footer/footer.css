@@ -1,0 +1,198 @@
+footer {
+    background-color: var(--color-bg-left);
+    height: fit-content;
+    display: flex;
+    padding: 5rem 0;
+}
+
+.inner__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+
+.left_side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    color: var(--color-white);
+}
+
+.left_side > h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.left_side > h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.left_side > h3 > a {
+    color: var(--color-secondary);
+    text-decoration: dotted underline;
+}
+
+.right_side {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: var(--color-white);
+}
+
+.right_side > h5 {
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.right_side > p {
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.navigation {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 1.5rem;
+}
+
+.navigation > a {
+    width: fit-content;
+    color: var(--color-white);
+}
+
+.navigation>a:hover,
+.navigation>a.active {
+    color: var(--color-white);
+    border-radius: 1rem;
+    padding: 0 1rem;
+    border-left: 1px solid var(--color-white);
+    border-right: 1px solid var(--color-white);
+}
+
+.footer__logo {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer__logo > a {
+    font-size: 2rem;
+    font-family: 'Cedarville Cursive', cursive;
+    color: var(--color-white);
+}
+
+.footer__logo > p {
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
+.footer__logo > p > span {
+    color: var(--color-primary-variant);
+    font-weight: 600;
+}
+
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ============= */
+@media screen and (max-width: 1024px) {
+
+    .left_side > h2 {
+        font-size: 2rem;
+    }
+
+    .left_side > h3 {
+        font-size: 1.5rem;
+    }
+
+    .right_side > h5 {
+        font-size: 1rem;
+    }
+
+    .right_side > p {
+        font-size: .7rem;
+    }
+
+    .navigation {
+        margin-top: 3rem;
+    }
+
+    .navigation > a {
+        font-size: .7rem;
+    }
+
+    .footer__logo > a {
+        font-size: 1.5rem;
+    }
+
+    .footer__logo > p {
+        font-size: .8rem;
+    }
+}
+
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ============= */
+@media screen and (max-width: 600px) {
+
+    .inner__container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .left_side {
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .left_side > h2 {
+        font-size: 1.5rem;
+    }
+
+    .left_side > h3 {
+        font-size: 1rem;
+    }
+
+    .right_side {
+        width: 100%;
+    }
+
+    .right_side > h5 {
+        font-size: 1rem;
+    }
+
+    .right_side > p {
+        font-size: .7rem;
+    }
+
+    .navigation {
+        margin-top: 2rem;
+    }
+
+    .navigation>a {
+        font-size: .8rem;
+    }
+
+    .footer__logo {
+        justify-content: center;
+    }
+
+    .footer__logo > a {
+        display: none;
+    }
+
+    .footer__logo > p {
+        font-size: .7rem;
+    }
+}

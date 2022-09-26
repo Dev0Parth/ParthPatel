@@ -1,0 +1,176 @@
+#notes {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes__container {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.notes__container > h2 {
+    color: var(--color-white);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.notes__container > p {
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10rem;
+}
+
+.main_swiper {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper_slide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.swiper_client_msg {
+    position: relative;
+    padding: 2rem 3rem;
+    padding-left: 4rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: var(--color-white);
+}
+
+.swiper_client_msg > p {
+    font-size: 1rem;
+    color: var(--color-primary);
+}
+
+.swiper_client_msg > p::before {
+    content: "\f10d";
+    margin-left: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Font Awesome 6 Free";
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(40, 111, 108, .5);
+}
+
+.swiper_client_msg > p::after {
+    content: "\f10e";
+    margin-right: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: "Font Awesome 6 Free";
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(40, 111, 108, .5);
+}
+
+.swiper_client_data {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.client_pic {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2.2rem;
+}
+
+.client_data_details>p:last-child {
+    color: #c4c4c4;
+    font-size: .8rem;
+    text-align: left;
+}
+
+.client_data_details>p:first-child { 
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ============= */
+@media screen and (max-width: 1024px) {
+    #notes {
+        padding: 5rem 0;
+        padding-top: 10rem;
+        min-height: fit-content;
+    }
+
+    .notes__container > h2 {
+        font-size: 3rem;
+    }
+
+    .notes__container > p {
+        font-size: .8rem;
+        margin-bottom: 8rem;
+    }
+
+    .swiper_slide {
+        width: 70%;
+    }
+}
+
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ============= */
+@media screen and (max-width: 600px) {
+    #notes {
+        padding: 5rem 0;
+        padding-top: 10rem;
+        min-height: fit-content;
+    }
+
+    .notes__container>h2 {
+        font-size: 2rem;
+    }
+
+    .notes__container>p {
+        font-size: .7rem;
+        padding: 0 1.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .swiper_client_msg { 
+        padding: 1rem 1rem;
+        padding-left: 2.5rem;
+    }
+
+    .swiper_client_msg > p {
+        font-size: .7rem;
+        font-weight: 500;
+    }
+
+    .swiper_client_msg > p::before,
+    .swiper_client_msg > p::after {
+        font-size: 1rem;
+    }
+
+    .client_pic {
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 2.2rem;
+    }
+
+    .client_data_details>p:last-child {
+        font-size: .7rem;
+    }
+
+    .client_data_details>p:first-child {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+}

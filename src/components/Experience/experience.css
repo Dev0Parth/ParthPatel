@@ -1,0 +1,179 @@
+#experience {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience__container > h2 {
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.full_path {
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+}
+
+.position {
+    width: 24.25%;
+    color: var(--color-white);
+}
+
+.position > h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.position > p {
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.mobile_position {
+    display: none;
+    flex-direction: column;
+    margin-top: .5rem;
+}
+
+.mobile_position > h4 {
+    font-size: 1.rem;
+    font-weight: 600;
+}
+
+.mobile_position > p {
+    font-size: .7rem;
+    font-weight: 500;
+}
+
+.steps > span {
+    padding: .4rem;
+    border: 2px dotted var(--color-white);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1rem;
+    margin-top: .4rem;
+}
+
+.dot {
+    padding: .3rem;
+    border-radius: 1rem;
+}
+
+._1 {
+    background-color: var(--color-primary-variant);
+}
+
+
+._2 {
+    background-color: #EF6340;
+}
+
+._3 {
+    background-color: #edbf48;
+}
+
+.details {
+    width: 24.25%;
+    margin-left: 1.2rem;
+    color: var(--color-white);
+}
+
+.details > h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.details > p {
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ============= */
+@media screen and (max-width: 1024px) {
+    .experience__container > h2 {
+        font-size: 3rem;
+    }
+
+    .position {
+        width: 30%;
+    }
+
+    .position > h4 {
+        font-size: 1.2rem;
+    }
+
+    .position > p {
+        font-size: .7rem;
+    }
+
+    .details {
+        width: 30%;
+    }
+
+    .details > h4 {
+        font-size: 1.2rem;
+    }
+
+    .details > p {
+        font-size: .7rem;
+    }
+}
+
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ============= */
+@media screen and (max-width: 600px) {
+    #experience {
+        padding-top: 3rem;
+    }
+
+    .experience__container > h2 {
+        display: none;
+    }
+
+    .full_path {
+        gap: 3rem;
+    }
+
+    .steps {
+        justify-content: flex-start;
+    }
+
+    .position {
+        display: none;
+    }
+
+    .mobile_position {
+        display: flex;
+    }
+
+    .details { 
+        width: 80%;
+    }
+
+    .details > h2 {
+        font-size: 1.4rem;
+    }
+
+    .details > p {
+        font-size: .8rem;
+    }
+}

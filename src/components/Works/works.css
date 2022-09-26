@@ -1,0 +1,115 @@
+#works {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg-left);
+}
+
+.works__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.work_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.work_title {
+    color: var(--color-white);
+}
+
+.work_title > h2 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.work_title > p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.explore_btn > a {
+    color: var(--color-secondary);
+    text-decoration: dotted underline;
+}
+
+.explore_btn > a:hover {
+    color: var(--color-secondary);
+}
+
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+    width: 100%;
+}
+
+.inner-carousel {
+    display: flex;
+}
+
+.item {
+    height: 20rem;
+    min-width: 20rem;
+    padding: 10px;
+    margin-top: 2rem;
+}
+
+.item > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    pointer-events: none;
+    box-shadow: 0 0 10px #ccc;
+}
+
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ============= */
+@media screen and (max-width: 1024px) {
+    .work_title > h2 {
+        font-size: 3rem;
+    }
+
+    .work_title > p {
+        font-size: 0.8rem;
+    }
+
+    .explore_btn > a {
+        font-size: 0.7rem;
+    }
+}
+
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ============= */
+@media screen and (max-width: 600px) {
+    #works {
+        align-items: flex-start;
+        padding: 5rem 0;
+        min-height: fit-content;
+    }
+
+    .work_title>h2 {
+        font-size: 2rem;
+    }
+
+    .work_title>p {
+        font-size: 0.7rem;
+    }
+
+    .explore_btn {
+        display: none;
+    }
+
+    .item {
+        height: 15rem;
+        min-width: 15rem;
+    }
+}
