@@ -49,7 +49,7 @@ const Services = () => {
           </p>
           <p>
             We use process design to create digital products. Besids that also
-            help their business.
+            help them.
           </p>
           <div className="projects_clients">
             <div className="project_count">
